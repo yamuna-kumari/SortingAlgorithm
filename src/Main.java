@@ -6,6 +6,7 @@ public class Main {
         SortingAlgorithm sortingAlgorithm = new SortingAlgorithm(arr);
         //sorted using bubble sort algo.
         sortingAlgorithm.bubbleSort();
+        sortingAlgorithm.insertionSort();
 
     }
 }

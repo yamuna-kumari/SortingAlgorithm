@@ -31,4 +31,31 @@ public class SortingAlgorithm {
         System.out.println("\n" + "Sorted Array : " + count + " times  :  " + Arrays.toString((arr)));
     }
 
+    public void insertionSort(){
+       /* i ← 1
+        while i < length(A)
+        j ← i
+        while j > 0 and A[j-1] > A[j]
+        swap A[j] and A[j-1]
+        j ← j - 1
+        end while
+        i ← i + 1
+        end while*/
+
+        // iterate
+
+        for(int i= 1; i<arr.length; i++){
+            int j=i;
+            while(j>0 && arr[j]<arr[j-1]){
+                int temp = arr[j];
+                arr[j]= arr[j-1];
+                arr[j-1]= temp;
+                j= j-1;
+
+            }
+        }
+
+        System.out.println("\n" + "Sorted Array :  " + Arrays.toString((arr)));
+    }
+
 }
